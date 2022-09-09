@@ -20,7 +20,6 @@ export const createAdmin = (req, res, next) => {
             user.username = "admin"
             user.setPassword("admin")
             user.roles.push(role)
-            user.synchWithChild()
             await user.save()
 
             res.status(200).json({ success: true, message: "Admin account creation successful" })
