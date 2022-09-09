@@ -104,7 +104,7 @@ export function configureRoutes(app) {
 
     // dashinfo
     router.get('/api/dashinfo', isLoggedIn, dashInfo)
-    // One time route for creating admin user with username "admin" and password "admin"
+    // One time route for creating admin user with username "admin" and password "asdf" (creates some other accounts too)
     router.get('/api/createAdmin', createAdmin)
 
     app.use('/', router)

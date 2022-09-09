@@ -63,7 +63,7 @@ export default function Nav() {
             <Outlet />
 
             <footer>
-                <h6 className="link" style={{ color: 'blue' }} onClick={seedDB}>Reseed the DB with an account username: admin, password: admin</h6>
+                <h6 className="link" style={{ color: 'blue' }} onClick={seedDB}>Reseed the DB with an account username: admin, password: asdf</h6>
                 <h6 className="link" style={{ color: 'blue' }} onClick={deleteCookie}>Delete Session Cookie</h6>
             </footer>
         </>
